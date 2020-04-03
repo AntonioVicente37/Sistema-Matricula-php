@@ -3,7 +3,7 @@ include_once 'includes/header.php';
 include_once 'includes/navbar.php';
 //Conexao
 include_once 'php_action/db_connect.php';
-
+//recebendo o id para editar o funcionario
 if(isset($_GET['id'])):
   $id = mysqli_escape_string($connect, $_GET['id']);
 
@@ -19,7 +19,7 @@ endif;
 
       <!-- Main Content -->
       <div id="content">
-
+        
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
